@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <title>Hello, world!</title>
+</head>
+<body>
+<center>
+<div class="container">
+  <h1 onclick="score()">0</h1>
+</div>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-sm">
+        <button type="button" class="btn btn-primary">Кнопка</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-secondary">Кнопка</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-success">Кнопка</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-between">
+      <div class="col-sm">
+        <button type="button" class="btn btn-sucess">Кнопка</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-danger">Кнопка</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-warning">Кнопка</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-between">
+      <div class="col-sm">
+        <button type="button" class="btn btn-info">Кнопка</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-light">Кнопка</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-dark">Кнопка</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-between">
+      <div class="col-sm">
+        <button type="button" class="btn btn-link">Кнопка</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-secondary btn-md" disabled>Кнопка</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-outline-warning">Кнопка</button>
+      </div>
+    </div>
+  </div>  
+</center>
+<style type="text/css">
+  *{
+    font-family: 'Pacifico', cursive;
+  }
+
+</style>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+
+    <script type="text/javascript">  
+      $('.col-sm').css("min-height", "200px");
+      $('.col-sm').addClass("text-center"); 
+      $('button').css({
+        'width': '200px',
+        'height': '50px',
+      });  
+
+      $('button').click(function(){
+        $('button').attr("class", "btn-success");
+        $(this).addClass("btn");
+        $(this).addClass("btn-danger");
+        $('body').css("background", "linear-gradient(to top, hotpink, gold)");
+      });
+
+    </script>  
+</body>
+</html>
